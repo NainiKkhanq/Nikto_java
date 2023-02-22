@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.Nikto"
+        android:hardwareAccelerated="true"
+        tools:targetApi="31">
+
+
+        <activity
+            android:name=".OnboardScreen_LoginAndSignup"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:exported="true">
+
+
+        </activity>
+
+
+        <meta-data android:name="applovin.sdk.key"
+            android:value="NfoOk1PAASVcJiybbx38USeNLyf2Dv9yI6ybSAfkfNGftEDKdCpXtrHyfGVK7RCq7NEq3RkEpM9n-omMlqyfbM"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:contentDescription="@string/app_name"
+    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragments.CategoryFrag">
+
+
+        <View
+            android:id="@+id/menue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:background="@drawable/recycler_design" />
+
+
+        <ImageView
+            android:id="@+id/ProfileRoom"
+            android:layout_width="46dp"
+            android:layout_height="69dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:paddingRight="@dimen/_5sdp"
+            android:src="@drawable/account" />
+
+
+        <RelativeLayout
+            android:id="@+id/options"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_below="@id/ProfileRoom"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/recyclerview_cashdesign">
+
+            <TextView
+                android:id="@+id/wllet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="Your Wallet"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/coinnm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wllet"
+
+                android:fontFamily="sans-serif-condensed-medium"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="Coins:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp" />
+
+            <TextView
+                android:id="@+id/UserCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wllet"
+                android:layout_toRightOf="@id/coinnm"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:paddingLeft="@dimen/_4sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp" />
+
+
+            <Button
+                android:id="@+id/WalletBtn"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/coinnm"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:background="@drawable/roundbtn"
+                android:backgroundTint="#20D300"
+                android:drawableLeft="@drawable/wallet"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="WALLET"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                app:cornerRadius="@dimen/_6sdp" />
+
+            <Button
+                android:id="@+id/withdrawbtn"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/coinnm"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:background="@drawable/roundbtn"
+                android:backgroundTint="#20D300"
+                android:drawableLeft="@drawable/money"
+
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="BACkOUT"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                app:cornerRadius="@dimen/_6sdp" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/NoticeRoom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_72sdp"
+            android:layout_below="@id/options"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/noticedesign"
+            android:elevation="@dimen/_28sdp"
+            android:focusable="true"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+            <TextView
+                android:id="@+id/refresher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="13dp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="Notice!"
+                android:textColor="#FF5722"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/noticeforuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/refresher"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="If we found something wrong in your account we will terminate your account for lifetime"
+                android:textSize="@dimen/_8sdp" />
+
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/CategoryRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/NoticeRoom"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/white"
+
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

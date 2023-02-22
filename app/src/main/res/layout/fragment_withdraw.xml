@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#E8E8E8"
+    android:elevation="@dimen/_50sdp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        tools:context=".Fragments.WithdrawFrag">
+
+
+        <RelativeLayout
+            android:id="@+id/recd"
+            android:layout_width="match_parent"
+
+            android:layout_height="@dimen/_185sdp"
+            android:background="@drawable/withdrawdesign"
+            android:elevation="@dimen/_20sdp">
+
+            <ImageView
+                android:id="@+id/backbtn"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@drawable/back" />
+
+            <RelativeLayout
+                android:id="@+id/options"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/recyclerview_cashdesign">
+
+                <TextView
+                    android:id="@+id/wllet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Withdraw Room"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/coinnm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wllet"
+                    android:fontFamily="sans-serif-condensed-medium"
+
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Total Coins:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_22sdp" />
+
+                <TextView
+                    android:id="@+id/UserCoins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wllet"
+                    android:layout_toRightOf="@id/coinnm"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_22sdp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/coinnm"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:text="You need Minimum 1000+ Coins to Get Witdraw"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/B5"
+            android:layout_width="@dimen/_500sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_below="@id/recd"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/withdrawds">
+
+            <LinearLayout
+                android:id="@+id/B1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/withcoinbase"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Coinbase"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/B2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/B1"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="Get Your Withdraw!"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/B3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/B2"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="Please Enter your Coinbase Email to get Withdraw in your Account"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <EditText
+                android:id="@+id/COINBASEEMAIL"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@id/B3"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:inputType="textEmailAddress"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/textbox_design"
+                android:drawableLeft="@drawable/baseline_mark_email_read_24"
+                android:drawablePadding="@dimen/_10sdp"
+                android:elevation="@dimen/_10sdp"
+                android:hint="Enter Coinbase Email"
+                android:padding="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@id/B5"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/WITHDRAW"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:background="@drawable/roundbtn"
+                android:backgroundTint="#0055FF"
+                android:drawableLeft="@drawable/atm"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="BACKOUT"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                app:cornerRadius="@dimen/_6sdp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:gravity="center"
+                android:layout_below="@id/B5">
+                <TextView
+                    android:id="@+id/f1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:text="Any Problem Contact With"
+                    android:gravity="center"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/supportteam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:text=" Support Team!"
+                    android:textColor="#FF6433"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/f1"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"/></RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

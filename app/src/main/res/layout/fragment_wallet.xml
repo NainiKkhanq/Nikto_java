@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:maxads="http://schemas.applovin.com/android/1.0"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:background="#E8E8E8"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.WalletFrag"
+    tools:ignore="NamespaceTypo">
+
+
+    <View
+        android:id="@+id/menue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:background="@drawable/recycler_design" />
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:src="@drawable/back"
+        />
+
+    <TextView
+        android:id="@+id/wllet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backbtn"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_10sdp"
+        android:text="EARNED COINS"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_19sdp" />
+
+
+    <LinearLayout
+        android:id="@+id/gv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wllet"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/UserCoins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wllet"
+            android:drawableLeft="@drawable/btc"
+            android:drawablePadding="@dimen/_5sdp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:paddingLeft="@dimen/_4sdp"
+            android:text="41566"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30sdp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_below="@id/gv2"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/recyclerview_cashdesign"
+        android:elevation="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/valu"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_horizontal"
+            android:text="EARNED COIN VALUE"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/gv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/valu"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/UBTC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/valu"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:gravity="center_horizontal"
+                android:text="0.00000000"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/valu"
+                android:layout_marginTop="@dimen/_4sdp"
+
+                android:layout_toRightOf="@id/UBTC"
+                android:gravity="center_horizontal"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="BTC"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/NTCIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gv1"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_4sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:text="The money is transferred to your account within 24 hours"
+            android:textColor="#011FCA"
+            android:textSize="@dimen/_8sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/infod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gv2"
+        android:layout_marginTop="@dimen/_88sdp"
+        android:padding="@dimen/_10sdp"
+        android:text="How to Work:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/info1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infod"
+        android:padding="@dimen/_10sdp"
+        android:text="1: Your earning is not constant every time it goes up and down with the rate of Bitcoin"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/info2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info1"
+        android:padding="@dimen/_10sdp"
+        android:text="2: Spin the Wheel or Scratch Card and Collect Coins to Get Withdraw"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info2"
+        android:padding="@dimen/_10sdp"
+        android:text="3: Watch Videos and Earn Coins "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info3"
+        android:padding="@dimen/_10sdp"
+        android:text="4: Don't Type Incorrect Email for Withdrawal Request"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/info4"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/backoutbtn"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:background="@drawable/roundbtn"
+            android:backgroundTint="#006ECF"
+            android:drawableLeft="@drawable/atm"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="BACKOUT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            app:cornerRadius="@dimen/_6sdp" />
+    </LinearLayout>
+
+    <com.applovin.mediation.ads.MaxAdView
+        android:id="@+id/maxAdView1"
+        maxads:adUnitId="45a079225c19874b"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_10sdp" />
+
+
+</RelativeLayout>

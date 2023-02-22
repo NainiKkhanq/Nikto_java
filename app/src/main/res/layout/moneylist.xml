@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/scratchroomdesign"
+    android:gravity="center_vertical"
+    android:elevation="@dimen/_50sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:layout_height="@dimen/_100sdp">
+
+
+    <ImageView
+        android:id="@+id/UPIC"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/nkte"
+        android:layout_marginLeft="@dimen/_2sdp" />
+
+    <TextView
+        android:id="@+id/blnctext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance:  "
+        android:textSize="@dimen/_17sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/UPIC"/>
+
+    <TextView
+        android:id="@+id/wthbalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0000005"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:textSize="@dimen/_17sdp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/blnctext"/>
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" BTC"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:paddingEnd="@dimen/_2sdp"
+        android:textSize="@dimen/_17sdp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/wthbalance"/>
+
+    <TextView
+        android:id="@+id/dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1/28/2023"
+        android:textSize="@dimen/_14sdp"
+        android:gravity="right"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/white"
+        android:paddingEnd="@dimen/_8sdp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/wthbalance"
+        android:layout_toRightOf="@+id/blnctext"/>
+
+
+
+</RelativeLayout>

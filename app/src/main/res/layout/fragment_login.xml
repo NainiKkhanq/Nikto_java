@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="SpeakableTextPresentCheck">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        tools:context=".Fragments.LoginFrag">
+
+        <View
+            android:id="@+id/recview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:background="@drawable/recdesign"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:src="@drawable/mainaccount"
+
+                />
+        </RelativeLayout>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_150sdp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="Signin to Your Account"
+            android:textColor="@color/white"
+
+
+            android:textSize="@dimen/_17ssp" />
+
+
+        <EditText
+            android:id="@+id/LEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/recview"
+            android:drawableLeft="@drawable/baseline_mark_email_read_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/textbox_design"
+            android:elevation="@dimen/_30sdp"
+            android:hint="Your Email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_10sdp" />
+
+
+        <EditText
+            android:id="@+id/LPswrd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/LEmail"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/textbox_design"
+            android:elevation="@dimen/_30sdp"
+            android:hint="Your Password"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="@dimen/_5sdp"
+            android:inputType="textPassword"
+            android:padding="@dimen/_10sdp" />
+
+
+        <LinearLayout
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_below="@id/LPswrd"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/SiginButton"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@id/LPswrd"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:background="@drawable/roundbtn"
+                android:backgroundTint="#FF5722"
+                android:drawableLeft="@drawable/finger"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="SIGNIN"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp"
+                app:cornerRadius="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Signup"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="New User Click to "
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/LSingupText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Signup"
+                android:textColor="#FF6F00"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/ase">
+            <TextView
+                android:id="@+id/f1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:text="Any Problem Contact With"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/supportteamL"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:text=" Support Team!"
+                android:textColor="#FF6433"
+                android:gravity="center"
+                android:layout_toRightOf="@id/f1"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"/></RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        tools:context=".Fragments.WithdrawFrag">
+
+
+        <RelativeLayout
+            android:id="@+id/recd"
+            android:layout_width="match_parent"
+
+            android:layout_height="@dimen/_185sdp"
+            android:background="@drawable/recdesign"
+            android:elevation="@dimen/_20sdp">
+
+            <ImageView
+                android:id="@+id/backbtn"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@drawable/back" />
+
+            <RelativeLayout
+                android:id="@+id/options"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/recyclerview_cashdesign">
+
+                <TextView
+                    android:id="@+id/wllet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Withdraw Room"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/coinnm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wllet"
+                    android:fontFamily="sans-serif-condensed-medium"
+
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Total Coins:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_22sdp" />
+
+                <TextView
+                    android:id="@+id/UserCoins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wllet"
+                    android:layout_toRightOf="@id/coinnm"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_22sdp" />
+
+                <TextView
+                    android:id="@+id/withdrawrequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/UserCoins"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Withdraw Request Send You will get Money Soon!"
+                    android:textColor="#FF0000" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recd"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Enter the complete details of your paypal account in case of any mistake you will be responsible yourself" />
+        />
+
+
+        <EditText
+            android:id="@+id/paypalemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info"
+            android:drawableLeft="@drawable/paypal"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/textbox_design"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="Enter Paypal Email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_12sdp" />
+
+        <EditText
+            android:id="@+id/paypalname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/paypalemail"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:drawableLeft="@drawable/paypal"
+
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/textbox_design"
+            android:drawablePadding="@dimen/_10sdp"
+
+            android:hint="Enter Paypal User name"
+            android:inputType="textPersonName"
+            android:padding="@dimen/_10sdp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paypalname"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/Wtihdrawbtn"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/paypalname"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/roundbtn"
+                android:backgroundTint="#0282E8"
+                android:drawableLeft="@drawable/atm"
+                android:gravity="center"
+                android:textSize="@dimen/_16ssp"
+                android:text="Confirm"
+                android:textColor="@color/white"
+                app:cornerRadius="@dimen/_40sdp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

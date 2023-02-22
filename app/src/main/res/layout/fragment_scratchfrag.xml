@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:maxads="http://schemas.applovin.com/android/1.0"
+    android:layout_gravity="center"
+    android:background="@drawable/bck"
+    android:keepScreenOn="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Fragments.scratchfrag">
+
+
+        <RelativeLayout
+            android:id="@+id/V15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Fragments.CategoryFrag">
+
+
+            <View
+                android:id="@+id/menue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:background="@drawable/recycler_design" />
+
+            <ImageView
+                android:id="@+id/backbtn"
+                android:layout_width="@dimen/_44sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@drawable/back" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/options"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+
+            android:layout_marginTop="@dimen/_43sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/recyclerview_cashdesign"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/wllet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="Your Wallet"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/coinnm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wllet"
+
+                android:fontFamily="sans-serif-condensed-medium"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:text="Coins:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp" />
+
+            <TextView
+                android:id="@+id/UserCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wllet"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/coinnm"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:paddingLeft="@dimen/_4sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp" />
+
+
+            <TextView
+                android:id="@+id/scratchtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/UserCoins"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:text="Scratches:"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp" />
+
+            <TextView
+                android:id="@+id/scratch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/UserCoins"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/scratchtext"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp" />
+
+
+            <TextView
+                android:id="@+id/WithdrawNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scratch"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:textColor="#FF0000"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@id/options"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/getmorescratch"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+
+                android:layout_below="@id/WithdrawNote"
+                android:text="Get More Spins"
+                android:textColor="@color/black"
+                android:visibility="gone"
+
+                android:src="@drawable/advertisement"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/_40sdp" />
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/scratecher"
+            android:layout_below="@+id/options"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="@dimen/_50sdp"
+            android:outlineSpotShadowColor="@color/black"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <com.anupkumarpanwar.scratchview.ScratchView
+                android:id="@+id/scratch_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:elevation="@dimen/_50sdp"
+                app:overlay_height="300dp"
+                app:overlay_image="@drawable/scratchroomdesign"
+                app:overlay_width="300dp"
+                app:tile_mode="CLAMP" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/trophy"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_height="@dimen/_60sdp"
+                        android:src="@drawable/celebration"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="@dimen/_50sdp"
+                    android:gravity="center"
+                    android:layout_below="@id/trophy"
+                    android:padding="@dimen/_10sdp"
+                    android:text="You Won 1000 Coins"
+                    android:textColor="#3A3A3A"
+
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="NK"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/text"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="right"
+                    android:paddingTop="@dimen/_25sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/tryagain"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/scratecher"
+
+
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/roundbtn"
+            android:backgroundTint="#00B307"
+            android:drawableLeft="@drawable/retry"
+            android:gravity="center"
+            android:text="TryAgain!"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

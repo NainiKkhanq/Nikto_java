@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "746273312178",
+    "project_id": "nikto-7fce2",
+    "storage_bucket": "nikto-7fce2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746273312178:android:636ef097ab0a259424e8ab",
+        "android_client_info": {
+          "package_name": "com.nkdevelopers.niktoearningapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746273312178-8pcaai398tlps862lmolosatddi01f09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9TPSkYmk5U38A-aId9YmBETPtZ-DeIHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746273312178-8pcaai398tlps862lmolosatddi01f09.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        tools:context=".Fragments.OnboardFrag">
+
+        <ImageView
+            android:id="@+id/boyimg"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_260sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/boy" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/boyimg">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Nikto Coins"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_34ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Hi I am Naini! I will help you to Earn Money.
+Hurry up Sign up and start Earning"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp" />
+
+
+            <Button
+                android:id="@+id/SingupBtn"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:background="@drawable/roundbtn"
+                android:backgroundTint="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="SIGN UP"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp"
+                app:cornerRadius="@dimen/_8sdp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:gravity="center"
+                    android:text="Already have an account"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp" />
+
+                <TextView
+                    android:id="@+id/Loginbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Login"
+                    android:textColor="#FF6F00"
+                    android:textSize="@dimen/_17ssp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout></ScrollView>
