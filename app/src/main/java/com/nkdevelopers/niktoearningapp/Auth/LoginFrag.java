@@ -73,7 +73,6 @@ public class LoginFrag extends Fragment {
 
                             if (task.isSuccessful()){
                                 dialog.dismiss();
-                                Toast.makeText(getContext(), "Welcome Back", Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(getContext(), MainActivity.class));
 
                             }

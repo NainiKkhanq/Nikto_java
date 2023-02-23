@@ -58,7 +58,7 @@ public class HistroyAdapters extends FirebaseRecyclerAdapter<HistroyModels,Histr
 
         holder.WithBalance.setText(model.getTOTAL_MONEY());
         holder.Dates.setText(model.getDATE());
-//        Glide.with(context).load(UPIC).circleCrop().into(holder.UPIC);
+        Glide.with(holder.UPIC.getContext()).load(R.drawable.coins).circleCrop().into(holder.UPIC);
 
 
 

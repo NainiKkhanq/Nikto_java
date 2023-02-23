@@ -9,7 +9,7 @@ public class AuthdataModel {
     String UPIC;
 
     String JOIN_DATE,notice;
-    int coins, scratch, spins ,diceroll ,withdraw , REWARD_AD,INTER_AD,T_PTC,PTC_WATCH;
+    int coins, scratch, spins ,diceroll ,withdraw , REWARD_AD,INTER_AD;
 
     public AuthdataModel() {
     }
@@ -110,23 +110,7 @@ public class AuthdataModel {
         this.INTER_AD = INTER_AD;
     }
 
-    public int getT_PTC() {
-        return T_PTC;
-    }
-
-    public void setT_PTC(int t_PTC) {
-        T_PTC = t_PTC;
-    }
-
-    public int getPTC_WATCH() {
-        return PTC_WATCH;
-    }
-
-    public void setPTC_WATCH(int PTC_WATCH) {
-        this.PTC_WATCH = PTC_WATCH;
-    }
-
-    public AuthdataModel(String NAME, String EMAIL, String UPIC, String JOIN_DATE, String notice, int coins, int scratch, int spins, int diceroll, int withdraw, int REWARD_AD, int INTER_AD, int t_PTC, int PTC_WATCH) {
+    public AuthdataModel(String NAME, String EMAIL, String UPIC, String JOIN_DATE, String notice, int coins, int scratch, int spins, int diceroll, int withdraw, int REWARD_AD, int INTER_AD) {
         this.NAME = NAME;
         this.EMAIL = EMAIL;
         this.UPIC = UPIC;
@@ -139,8 +123,6 @@ public class AuthdataModel {
         this.withdraw = withdraw;
         this.REWARD_AD = REWARD_AD;
         this.INTER_AD = INTER_AD;
-        T_PTC = t_PTC;
-        this.PTC_WATCH = PTC_WATCH;
     }
 }
 

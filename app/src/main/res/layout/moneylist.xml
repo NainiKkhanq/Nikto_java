@@ -12,7 +12,6 @@
         android:id="@+id/UPIC"
         android:layout_width="@dimen/_70sdp"
         android:layout_height="@dimen/_150sdp"
-        android:src="@drawable/nkte"
         android:layout_marginLeft="@dimen/_2sdp" />
 
     <TextView

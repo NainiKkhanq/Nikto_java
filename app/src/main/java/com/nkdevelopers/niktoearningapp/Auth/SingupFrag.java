@@ -69,7 +69,7 @@ public class SingupFrag extends Fragment {
                 Password = binding.SPswrd.getText().toString();
                 dialog = new ProgressDialog(getContext());
                 dialog.setMessage("Creating Your Account Please Wait!");
-                String UPIC = "";
+                String UPIC = "https://res.cloudinary.com/dghloo9lv/image/upload/v1673249067/logo_pmjcny.png";
                 String JOINDATE = getDateTime();
                 String NOTICE = "Welcome to Bitcoin Bonanza! Enjoy the Journey";
                 int UCOINS = 0;
@@ -79,8 +79,6 @@ public class SingupFrag extends Fragment {
                 int Dice = 5;
                 int RewardAd = 0;
                 int INTERAD = 0;
-                int Total_Ptc_Watch = 0;
-                int T_PTC = 5;
 
 
                 if (TextUtils.isEmpty(Name)){
@@ -98,7 +96,7 @@ public class SingupFrag extends Fragment {
 
                     dialog.show();
 
-                   AuthdataModel authDataModel = new AuthdataModel(Name,Email,UPIC,JOINDATE,NOTICE,UCOINS,spins,Scratcher,Dice,Withdraw,RewardAd,INTERAD,T_PTC,Total_Ptc_Watch);
+                   AuthdataModel authDataModel = new AuthdataModel(Name,Email,UPIC,JOINDATE,NOTICE,UCOINS,spins,Scratcher,Dice,Withdraw,RewardAd,INTERAD);
 
                     auth.createUserWithEmailAndPassword(Email, Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override

@@ -61,13 +61,12 @@ public class SplashFrag extends Fragment {
                 }
                 else {
 
-                    Toast.makeText(getContext(), "Welcome Back", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getContext(), MainActivity.class));
                 }
 
 
             }
-        },3000);
+        },1000);
 
 
         return binding.getRoot();
