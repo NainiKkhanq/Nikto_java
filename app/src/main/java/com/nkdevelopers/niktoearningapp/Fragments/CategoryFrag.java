@@ -187,7 +187,7 @@ public class CategoryFrag extends Fragment  implements MaxRewardedAdListener {
             public void onClick(View view) {
 
                 Intent i = new Intent(android.content.Intent.ACTION_VIEW);
-                i.setData(Uri.parse("https://play.google.com/store/apps/developer?id=NKAPPSDEV"));
+                i.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.nkdevelopers.niktoearningapp&hl=en&gl=US"));
                 startActivity(i);
             }
         });

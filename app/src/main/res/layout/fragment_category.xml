@@ -236,14 +236,14 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_8sdp"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/mg" />
+                    app:srcCompat="@drawable/star" />
 
                 <TextView
                     android:id="@+id/itemText2"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
                     android:gravity="center"
-                    android:text="Earn More"
+                    android:text="Rate Us"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_16ssp"
                     android:textStyle="bold"/>
