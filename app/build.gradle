@@ -10,10 +10,10 @@ android {
 
     defaultConfig {
         applicationId "com.nkdevelopers.niktoearningapp"
-        minSdk 24
+        minSdk 20
         targetSdk 32
-        versionCode 182
-        versionName "1.22"
+        versionCode 183
+        versionName "1.23"
 
     }
     buildFeatures {

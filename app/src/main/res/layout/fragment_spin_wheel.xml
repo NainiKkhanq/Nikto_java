@@ -6,12 +6,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     android:background="@drawable/bck"
     android:layout_width="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         tools:context=".Fragments.SpinWheelFrag">
 
 
@@ -25,18 +26,12 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:context=".Fragments.CategoryFrag">
 
-            <com.applovin.mediation.ads.MaxAdView
-                android:id="@+id/MAXBANNER"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_40sdp"
-                android:background="#0066FF"
-                maxads:adUnitId="45a079225c19874b" />
+
 
             <View
                 android:id="@+id/menue"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_150sdp"
-                android:layout_below="@id/MAXBANNER"
                 android:background="@drawable/recycler_design">
 
 
@@ -45,7 +40,6 @@
             <ImageView
                 android:id="@+id/backbtn"
                 android:layout_width="@dimen/_43sdp"
-                android:layout_below="@id/MAXBANNER"
                 android:layout_height="@dimen/_32sdp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="@dimen/_5sdp"
@@ -57,11 +51,10 @@
             android:id="@+id/options"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_130sdp"
-            android:layout_marginStart="@dimen/_14sdp"
-            android:layout_marginTop="@dimen/_84sdp"
-            android:layout_marginEnd="@dimen/_14sdp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="16dp"
             android:background="@drawable/recyclerview_cashdesign"
-            app:layout_constraintBottom_toTopOf="@+id/imageView3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -144,10 +137,7 @@
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_300sdp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/options"
             app:srcCompat="@drawable/spinner" />
 
         <com.nkdevelopers.niktoearningapp.SpinWheel.LuckyWheelView
@@ -217,13 +207,22 @@
             android:textSize="@dimen/_15sdp"
             android:textStyle="bold"
             android:visibility="gone"
-
-
             app:cornerRadius="@dimen/_40sdp"
             app:layout_constraintBottom_toTopOf="@+id/wheelview"
             app:layout_constraintEnd_toEndOf="@+id/wheelview"
             app:layout_constraintStart_toStartOf="@+id/wheelview"
             app:layout_constraintTop_toBottomOf="@+id/options" />
 
+
+        <FrameLayout
+            android:id="@+id/MAXNATIVE"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@drawable/bck"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:flow_verticalAlign="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     </androidx.constraintlayout.widget.ConstraintLayout></ScrollView>

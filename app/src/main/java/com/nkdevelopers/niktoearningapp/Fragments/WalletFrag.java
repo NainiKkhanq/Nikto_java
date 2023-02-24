@@ -58,161 +58,203 @@ public class WalletFrag extends Fragment {
 
                 reference  =FirebaseDatabase.getInstance().getReference(FirebaseAuth.getInstance().getUid());
 
-                if (Coins < 50){
-
-                    binding.UBTC.setText("0.00000000");
-                    reference.child("BTC").setValue("Collect 500 Coins to Get Bitcoin Rate");
 
 
 
-                }else if (Coins <= 500){
-                        binding.UBTC.setText("0.00000004");
-                    reference.child("BTC").setValue("0.0000004");}
+                if (Coins >= 50 && Coins <=100){
 
-                 else if (Coins >= 600 && Coins <= 700){
+                    binding.UBTC.setText("0.00000001");
+                    reference.child("BTC").setValue("0.00000001");
+                }
+                else if (Coins >= 100 && Coins<=150){
+                    binding.UBTC.setText("0.00000002");
+                    reference.child("BTC").setValue("0.00000002");
+
+                }
+
+
+                else if (Coins >= 200 && Coins <= 250){
+                        binding.UBTC.setText("0.00000003");
+                    reference.child("BTC").setValue("0.0000003");}
+
+                 else if (Coins >= 250 && Coins <= 300){
+                    binding.UBTC.setText("0.00000004");
+                    reference.child("BTC").setValue("0.00000004");
+
+                }else if (Coins >= 300 && Coins <= 350){
+                    binding.UBTC.setText("0.00000005");
+                    reference.child("BTC").setValue("0.00000005");
+
+                }else if (Coins >=350 && Coins <= 400){
                     binding.UBTC.setText("0.00000006");
                     reference.child("BTC").setValue("0.00000006");
 
-                }else if (Coins >= 700 && Coins <= 800){
-                    binding.UBTC.setText("0.000000065");
-                    reference.child("BTC").setValue("0.000000065");
+                }else if (Coins >= 400 && Coins <= 450){
+                    binding.UBTC.setText("0.00000007");
+                    reference.child("BTC").setValue("0.00000007");
 
-                }else if (Coins >=800 && Coins <= 900){
+                }else if (Coins >= 450 && Coins <= 500 ){
                     binding.UBTC.setText("0.00000008");
                     reference.child("BTC").setValue("0.00000008");
 
-                }else if (Coins >= 900 && Coins <= 1000){
-                    binding.UBTC.setText("0.00000010");
+                }else if (Coins >= 500 && Coins <=550){
+                    binding.UBTC.setText("0.00000009");
+                    reference.child("BTC").setValue("0.00000009");
+
+                }else if (Coins >= 550 && Coins <= 600){
+                        binding.UBTC.setText("0.00000010");
                     reference.child("BTC").setValue("0.00000010");
 
-                }else if (Coins >= 1000 && Coins <= 1100 ){
+                }else if (Coins >= 600 && Coins<= 700){
+                    binding.UBTC.setText("0.00000011");
+                    reference.child("BTC").setValue("0.00000011");
+
+                }else if (Coins >= 700 && Coins <= 800){
                     binding.UBTC.setText("0.00000012");
                     reference.child("BTC").setValue("0.00000012");
 
-                }else if (Coins >= 1100 && Coins <=1200){
+                }else if (Coins >= 800 && Coins<=900){
+                    binding.UBTC.setText("0.00000013");
+                    reference.child("BTC").setValue("0.00000013");
+
+                }else if (Coins >= 900 && Coins <=1000){
+                    binding.UBTC.setText("0.00000013");
+                    reference.child("BTC").setValue("0.00000013");
+
+                }else if (Coins >= 1000 && Coins <=1050){
                     binding.UBTC.setText("0.00000014");
                     reference.child("BTC").setValue("0.00000014");
 
-                }else if (Coins >= 1200 && Coins <= 1300){
+                }else if (Coins >= 1050 && Coins <= 1100){
+                    binding.UBTC.setText("0.00000015");
+                    reference.child("BTC").setValue("0.00000015");
+
+                }else if (Coins >= 1100 && Coins <= 1150){
                     binding.UBTC.setText("0.00000016");
                     reference.child("BTC").setValue("0.00000016");
 
-                }else if (Coins >= 1300 && Coins<= 1400){
+                }else if (Coins >= 1150 && Coins <= 1200){
+                    binding.UBTC.setText("0.00000017");
+                    reference.child("BTC").setValue("0.00000017");
+
+                }else if (Coins >= 1200 && Coins <= 1300){
                     binding.UBTC.setText("0.00000018");
                     reference.child("BTC").setValue("0.00000018");
 
-                }else if (Coins >= 1400 && Coins <= 1500){
+                }else if (Coins >= 1300 && Coins <= 1400){
+                    binding.UBTC.setText("0.00000019");
+                    reference.child("BTC").setValue("0.00000019");
+
+                }else if (Coins >= 1400 && Coins <= 1600){
                     binding.UBTC.setText("0.00000020");
                     reference.child("BTC").setValue("0.00000020");
 
-                }else if (Coins >= 1500 && Coins<=1600){
+                }else if (Coins >= 1600 && Coins <= 1700){
+                    binding.UBTC.setText("0.00000021");
+                    reference.child("BTC").setValue("0.00000021");
+
+                }else if (Coins >= 1700 && Coins <= 1750){
                     binding.UBTC.setText("0.00000022");
                     reference.child("BTC").setValue("0.00000022");
 
-                }else if (Coins >= 1600 && Coins <=1700){
+                }else if (Coins >= 1750 && Coins <= 1800){
+                    binding.UBTC.setText("0.00000023");
+                    reference.child("BTC").setValue("0.00000023");
+
+                }else if (Coins >= 1800 && Coins <= 1900){
                     binding.UBTC.setText("0.00000024");
                     reference.child("BTC").setValue("0.00000024");
 
-                }else if (Coins >= 1800 && Coins <=1900){
+                }else if (Coins >= 1900 && Coins <= 2000){
+                    binding.UBTC.setText("0.00000024");
+                    reference.child("BTC").setValue("0.00000024");
+
+                }else if (Coins >= 2000 && Coins <= 2100){
+                    binding.UBTC.setText("0.00000025");
+                    reference.child("BTC").setValue("0.00000025");
+
+                }else if (Coins >= 2100 && Coins <= 2200){
                     binding.UBTC.setText("0.00000026");
                     reference.child("BTC").setValue("0.00000026");
 
-                }else if (Coins >= 1900 && Coins <= 2000){
+                }else if (Coins >= 2200 && Coins <= 2300){
+                    binding.UBTC.setText("0.00000027");
+                    reference.child("BTC").setValue("0.00000027");
+
+                }else if (Coins >= 2300 && Coins <= 2350){
                     binding.UBTC.setText("0.00000028");
                     reference.child("BTC").setValue("0.00000028");
 
-                }else if (Coins >= 2000 && Coins <= 2100){
+                }else if (Coins >=2350  && Coins <= 2400){
+                    binding.UBTC.setText("0.00000029");
+                    reference.child("BTC").setValue("0.00000029");
+
+                }else if (Coins >=2450 && Coins<= 2500){
                     binding.UBTC.setText("0.00000030");
                     reference.child("BTC").setValue("0.00000030");
-
-                }else if (Coins >= 2100 && Coins <= 2200){
+                }else if (Coins >=2550 && Coins<= 2600){
+                    binding.UBTC.setText("0.00000031");
+                    reference.child("BTC").setValue("0.00000031");
+                }else if (Coins >=2600 && Coins<= 2650){
                     binding.UBTC.setText("0.00000032");
                     reference.child("BTC").setValue("0.00000032");
-
-                }else if (Coins >= 2200 && Coins <= 2300){
+                }else if (Coins >=2650 && Coins<= 2700){
+                    binding.UBTC.setText("0.00000033");
+                    reference.child("BTC").setValue("0.00000033");
+                }else if (Coins >=2700 && Coins<= 2800){
                     binding.UBTC.setText("0.00000034");
                     reference.child("BTC").setValue("0.00000034");
-
-                }else if (Coins >= 2300 && Coins <= 2400){
+                }else if (Coins >=2800 && Coins<= 2900){
+                    binding.UBTC.setText("0.00000035");
+                    reference.child("BTC").setValue("0.00000035");
+                }else if (Coins >=2900 && Coins<= 3000){
                     binding.UBTC.setText("0.00000036");
                     reference.child("BTC").setValue("0.00000036");
-
-                }else if (Coins >= 2400 && Coins <= 2500){
+                }else if (Coins >=3000 && Coins<=3050 ){
+                    binding.UBTC.setText("0.00000037");
+                    reference.child("BTC").setValue("0.00000037");
+                }else if (Coins >=3050 && Coins<= 3100){
                     binding.UBTC.setText("0.00000038");
                     reference.child("BTC").setValue("0.00000038");
-
-                }else if (Coins >= 2500 && Coins <= 2600){
+                }else if (Coins >=3150 && Coins <=3200){
+                    binding.UBTC.setText("0.00000039");
+                    reference.child("BTC").setValue("0.00000039");
+                }else if (Coins >= 3200 && Coins <=3250 ){
                     binding.UBTC.setText("0.00000040");
                     reference.child("BTC").setValue("0.00000040");
-
-                }else if (Coins >= 2600 && Coins <= 2700){
+                }else if (Coins >= 3250 && Coins <= 3300){
+                    binding.UBTC.setText("0.00000041");
+                    reference.child("BTC").setValue("0.00000041");
+                }else if (Coins >= 3300 && Coins <= 3350){
                     binding.UBTC.setText("0.00000042");
-                    reference.child("BTC").setValue("0.00000042");
-
-                }else if (Coins >= 2700 && Coins <= 2800){
+                    reference.child("BTC").setValue("0.00000043");
+                }else if (Coins >= 3350 && Coins <= 3400){
                     binding.UBTC.setText("0.00000044");
-                    reference.child("BTC").setValue("0.00000044");
-
-                }else if (Coins >= 2800 && Coins <= 2900){
+                    reference.child("BTC").setValue("0.00000044");}
+                    else if (Coins >= 3400 && Coins <= 3500){
+                        binding.UBTC.setText("0.00000045");
+                        reference.child("BTC").setValue("0.00000045");}
+                else if (Coins >= 3500 && Coins <= 3600){
                     binding.UBTC.setText("0.00000046");
-                    reference.child("BTC").setValue("0.00000046");
-
-                }else if (Coins >= 3000 && Coins <= 3100){
+                    reference.child("BTC").setValue("0.00000046");}
+                else if (Coins >= 3600 && Coins <= 3700){
+                    binding.UBTC.setText("0.00000047");
+                    reference.child("BTC").setValue("0.00000047");}
+                else if (Coins >= 3700 && Coins <= 3800){
                     binding.UBTC.setText("0.00000048");
-                    reference.child("BTC").setValue("0.00000048");
+                    reference.child("BTC").setValue("0.00000048");}
+                else if (Coins >= 3800 && Coins <= 3900){
+                    binding.UBTC.setText("0.00000048");
+                    reference.child("BTC").setValue("0.00000048");}
+                else if (Coins >= 3900 && Coins <= 4000){
+                    binding.UBTC.setText("0.00000049");
+                    reference.child("BTC").setValue("0.00000049");}
 
-                }else if (Coins >= 3100 && Coins <= 3200){
-                    binding.UBTC.setText("0.00000050");
-                    reference.child("BTC").setValue("0.00000050");
-
-                }else if (Coins >= 3200 && Coins <= 3300){
-                    binding.UBTC.setText("0.00000052");
-                    reference.child("BTC").setValue("0.00000052");
-
-                }else if (Coins >= 3300 && Coins <= 3400){
-                    binding.UBTC.setText("0.00000054");
-                    reference.child("BTC").setValue("0.00000054");
-
-                }else if (Coins >= 3400 && Coins <= 3500){
-                    binding.UBTC.setText("0.00000056");
-                    reference.child("BTC").setValue("0.00000056");
-
-                }else if (Coins >=3500  && Coins <= 3600){
-                    binding.UBTC.setText("0.00000058");
-                    reference.child("BTC").setValue("0.00000058");
-
-                }else if (Coins >=3700 && Coins<= 3800){
-                    binding.UBTC.setText("0.00000060");
-                    reference.child("BTC").setValue("0.00000060");
-                }else if (Coins >=3800 && Coins<= 4000){
-                    binding.UBTC.setText("0.00000062");
-                    reference.child("BTC").setValue("0.00000062");
-                }else if (Coins >=4000 && Coins<= 5000){
-                    binding.UBTC.setText("0.00000064");
-                    reference.child("BTC").setValue("0.00000064");
-                }else if (Coins >=5000 && Coins<= 6000){
-                    binding.UBTC.setText("0.00000066");
-                    reference.child("BTC").setValue("0.00000066");
-                }else if (Coins >=6000 && Coins<= 7000){
-                    binding.UBTC.setText("0.00000068");
-                    reference.child("BTC").setValue("0.00000068");
-                }else if (Coins >=7000 && Coins<= 8000){
-                    binding.UBTC.setText("0.00000070");
-                    reference.child("BTC").setValue("0.00000070");
-                }else if (Coins >=8000 && Coins<= 10000){
-                    binding.UBTC.setText("0.00000074");
-                    reference.child("BTC").setValue("0.00000074");
-                }else if (Coins >=10000 && Coins<= 11000){
-                    binding.UBTC.setText("0.00000078");
-                    reference.child("BTC").setValue("0.00000078");
-                }else if (Coins >=12000 && Coins<= 13000){
-                    binding.UBTC.setText("0.00000084");
-                    reference.child("BTC").setValue("0.00000084");
-                }else if (Coins ==13000 || Coins >14000){
-                    binding.UBTC.setText("0.00000088+");
-                    reference.child("BTC").setValue("0.00000080+");
-                    binding.info1.setText("Bitcoin Calculator is Working in Backend. So Don't Worry about Earning Price Calculated With Coins");
-                }
+                    else if (Coins > 4050 || Coins >= 5000) {
+                        binding.UBTC.setText("0.00000050+");
+                        reference.child("BTC").setValue("0.00000050+");
+                    binding.info1.setText("Keep Earning! Calculator is calculating Your Revenue!");
+                    }
 
 
 

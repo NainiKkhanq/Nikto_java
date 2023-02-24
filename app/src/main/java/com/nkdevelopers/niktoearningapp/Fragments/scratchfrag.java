@@ -367,139 +367,147 @@ interstitialAd.loadAd();
 
                DatabaseReference reference  =FirebaseDatabase.getInstance().getReference(FirebaseAuth.getInstance().getUid());
 
-                if (Coins < 50){
+
+                if (Coins >= 50 && Coins <=100){
+
+                    reference.child("BTC").setValue("0.00000001");
+                }
+                else if (Coins >= 100 && Coins<=150){
+                    reference.child("BTC").setValue("0.00000002");
+
+                }
 
 
-                    reference.child("BTC").setValue("Collect 500 Coins to Get Bitcoin Rate");
+                else if (Coins >= 200 && Coins <= 250){
+                    reference.child("BTC").setValue("0.0000003");}
 
+                else if (Coins >= 250 && Coins <= 300){
+                    reference.child("BTC").setValue("0.00000004");
 
+                }else if (Coins >= 300 && Coins <= 350){
+                    reference.child("BTC").setValue("0.00000005");
 
-                }else if (Coins <= 500){
-
-                    reference.child("BTC").setValue("0.0000004");}
-
-                else if (Coins >= 600 && Coins <= 700){
-
+                }else if (Coins >=350 && Coins <= 400){
                     reference.child("BTC").setValue("0.00000006");
 
-                }else if (Coins >= 700 && Coins <= 800){
+                }else if (Coins >= 400 && Coins <= 450){
+                    reference.child("BTC").setValue("0.00000007");
 
-                    reference.child("BTC").setValue("0.000000065");
-
-                }else if (Coins >=800 && Coins <= 900){
-
+                }else if (Coins >= 450 && Coins <= 500 ){
                     reference.child("BTC").setValue("0.00000008");
 
-                }else if (Coins >= 900 && Coins <= 1000){
+                }else if (Coins >= 500 && Coins <=550){
+                    reference.child("BTC").setValue("0.00000009");
 
+                }else if (Coins >= 550 && Coins <= 600){
                     reference.child("BTC").setValue("0.00000010");
 
-                }else if (Coins >= 1000 && Coins <= 1100 ){
+                }else if (Coins >= 600 && Coins<= 700){
+                    reference.child("BTC").setValue("0.00000011");
 
+                }else if (Coins >= 700 && Coins <= 800){
                     reference.child("BTC").setValue("0.00000012");
 
-                }else if (Coins >= 1100 && Coins <=1200){
+                }else if (Coins >= 800 && Coins<=900){
+                    reference.child("BTC").setValue("0.00000013");
 
+                }else if (Coins >= 900 && Coins <=1000){
+                    reference.child("BTC").setValue("0.00000013");
+
+                }else if (Coins >= 1000 && Coins <=1050){
                     reference.child("BTC").setValue("0.00000014");
 
-                }else if (Coins >= 1200 && Coins <= 1300){
+                }else if (Coins >= 1050 && Coins <= 1100){
+                    reference.child("BTC").setValue("0.00000015");
 
+                }else if (Coins >= 1100 && Coins <= 1150){
                     reference.child("BTC").setValue("0.00000016");
 
-                }else if (Coins >= 1300 && Coins<= 1400){
+                }else if (Coins >= 1150 && Coins <= 1200){
+                    reference.child("BTC").setValue("0.00000017");
 
+                }else if (Coins >= 1200 && Coins <= 1300){
                     reference.child("BTC").setValue("0.00000018");
 
-                }else if (Coins >= 1400 && Coins <= 1500){
+                }else if (Coins >= 1300 && Coins <= 1400){
+                    reference.child("BTC").setValue("0.00000019");
 
+                }else if (Coins >= 1400 && Coins <= 1600){
                     reference.child("BTC").setValue("0.00000020");
 
-                }else if (Coins >= 1500 && Coins<=1600){
+                }else if (Coins >= 1600 && Coins <= 1700){
+                    reference.child("BTC").setValue("0.00000021");
 
+                }else if (Coins >= 1700 && Coins <= 1750){
                     reference.child("BTC").setValue("0.00000022");
 
-                }else if (Coins >= 1600 && Coins <=1700){
+                }else if (Coins >= 1750 && Coins <= 1800){
+                    reference.child("BTC").setValue("0.00000023");
 
+                }else if (Coins >= 1800 && Coins <= 1900){
                     reference.child("BTC").setValue("0.00000024");
 
-                }else if (Coins >= 1800 && Coins <=1900){
-
-                    reference.child("BTC").setValue("0.00000026");
-
                 }else if (Coins >= 1900 && Coins <= 2000){
-
-                    reference.child("BTC").setValue("0.00000028");
+                    reference.child("BTC").setValue("0.00000024");
 
                 }else if (Coins >= 2000 && Coins <= 2100){
-
-                    reference.child("BTC").setValue("0.00000030");
+                    reference.child("BTC").setValue("0.00000025");
 
                 }else if (Coins >= 2100 && Coins <= 2200){
-
-                    reference.child("BTC").setValue("0.00000032");
+                    reference.child("BTC").setValue("0.00000026");
 
                 }else if (Coins >= 2200 && Coins <= 2300){
+                    reference.child("BTC").setValue("0.00000027");
 
+                }else if (Coins >= 2300 && Coins <= 2350){
+                    reference.child("BTC").setValue("0.00000028");
+
+                }else if (Coins >=2350  && Coins <= 2400){
+                    reference.child("BTC").setValue("0.00000029");
+
+                }else if (Coins >=2450 && Coins<= 2500){
+                    reference.child("BTC").setValue("0.00000030");
+                }else if (Coins >=2550 && Coins<= 2600){
+                    reference.child("BTC").setValue("0.00000031");
+                }else if (Coins >=2600 && Coins<= 2650){
+                    reference.child("BTC").setValue("0.00000032");
+                }else if (Coins >=2650 && Coins<= 2700){
+                    reference.child("BTC").setValue("0.00000033");
+                }else if (Coins >=2700 && Coins<= 2800){
                     reference.child("BTC").setValue("0.00000034");
-
-                }else if (Coins >= 2300 && Coins <= 2400){
-
+                }else if (Coins >=2800 && Coins<= 2900){
+                    reference.child("BTC").setValue("0.00000035");
+                }else if (Coins >=2900 && Coins<= 3000){
                     reference.child("BTC").setValue("0.00000036");
-
-                }else if (Coins >= 2400 && Coins <= 2500){
-
+                }else if (Coins >=3000 && Coins<=3050 ){
+                    reference.child("BTC").setValue("0.00000037");
+                }else if (Coins >=3050 && Coins<= 3100){
                     reference.child("BTC").setValue("0.00000038");
-
-                }else if (Coins >= 2500 && Coins <= 2600){
+                }else if (Coins >=3150 && Coins <=3200){
+                    reference.child("BTC").setValue("0.00000039");
+                }else if (Coins >= 3200 && Coins <=3250 ){
                     reference.child("BTC").setValue("0.00000040");
+                }else if (Coins >= 3250 && Coins <= 3300){
+                    reference.child("BTC").setValue("0.00000041");
+                }else if (Coins >= 3300 && Coins <= 3350){
+                    reference.child("BTC").setValue("0.00000043");
+                }else if (Coins >= 3350 && Coins <= 3400){
+                    reference.child("BTC").setValue("0.00000044");}
+                else if (Coins >= 3400 && Coins <= 3500){
+                    reference.child("BTC").setValue("0.00000045");}
+                else if (Coins >= 3500 && Coins <= 3600){
+                    reference.child("BTC").setValue("0.00000046");}
+                else if (Coins >= 3600 && Coins <= 3700){
+                    reference.child("BTC").setValue("0.00000047");}
+                else if (Coins >= 3700 && Coins <= 3800){
+                    reference.child("BTC").setValue("0.00000048");}
+                else if (Coins >= 3800 && Coins <= 3900){
+                    reference.child("BTC").setValue("0.00000048");}
+                else if (Coins >= 3900 && Coins <= 4000){
+                    reference.child("BTC").setValue("0.00000049");}
 
-                }else if (Coins >= 2600 && Coins <= 2700){
-                    reference.child("BTC").setValue("0.00000042");
-
-                }else if (Coins >= 2700 && Coins <= 2800){
-                    reference.child("BTC").setValue("0.00000044");
-
-                }else if (Coins >= 2800 && Coins <= 2900){
-                    reference.child("BTC").setValue("0.00000046");
-
-                }else if (Coins >= 3000 && Coins <= 3100){
-                    reference.child("BTC").setValue("0.00000048");
-
-                }else if (Coins >= 3100 && Coins <= 3200){
-                    reference.child("BTC").setValue("0.00000050");
-
-                }else if (Coins >= 3200 && Coins <= 3300){
-                    reference.child("BTC").setValue("0.00000052");
-
-                }else if (Coins >= 3300 && Coins <= 3400){
-                    reference.child("BTC").setValue("0.00000054");
-
-                }else if (Coins >= 3400 && Coins <= 3500){
-                    reference.child("BTC").setValue("0.00000056");
-
-                }else if (Coins >=3500  && Coins <= 3600){
-                    reference.child("BTC").setValue("0.00000058");
-
-                }else if (Coins >=3700 && Coins<= 3800){
-                    reference.child("BTC").setValue("0.00000060");
-                }else if (Coins >=3800 && Coins<= 4000){
-                    reference.child("BTC").setValue("0.00000062");
-                }else if (Coins >=4000 && Coins<= 5000){
-                    reference.child("BTC").setValue("0.00000064");
-                }else if (Coins >=5000 && Coins<= 6000){
-                    reference.child("BTC").setValue("0.00000066");
-                }else if (Coins >=6000 && Coins<= 7000){
-                    reference.child("BTC").setValue("0.00000068");
-                }else if (Coins >=7000 && Coins<= 8000){
-                    reference.child("BTC").setValue("0.00000070");
-                }else if (Coins >=8000 && Coins<= 10000){
-                    reference.child("BTC").setValue("0.00000074");
-                }else if (Coins >=10000 && Coins<= 11000){
-                    reference.child("BTC").setValue("0.00000078");
-                }else if (Coins >=12000 && Coins<= 13000){
-                    reference.child("BTC").setValue("0.00000084");
-                }else if (Coins ==13000 || Coins >14000){
-                    reference.child("BTC").setValue("0.00000080+");
+                else if (Coins > 4050 || Coins >= 5000) {
+                    reference.child("BTC").setValue("0.00000050+");
                 }
 
 

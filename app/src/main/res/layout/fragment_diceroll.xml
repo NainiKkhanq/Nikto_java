@@ -138,13 +138,12 @@
             android:layout_width="@dimen/_130sdp"
             android:layout_height="@dimen/_130sdp"
             android:layout_gravity="center"
+            android:layout_marginTop="10dp"
             android:src="@drawable/d1"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/d12"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/d12"
-            app:layout_constraintTop_toBottomOf="@+id/d12"
-            app:layout_constraintVertical_bias="0.117" />
+            app:layout_constraintTop_toBottomOf="@+id/d12" />
 
         <ImageView
             android:id="@+id/d12"
@@ -173,5 +172,14 @@
             app:layout_constraintTop_toBottomOf="@+id/d12"
             app:layout_constraintVertical_bias="0.0" />
 
+        <FrameLayout
+            android:id="@+id/MAXNATIVE"
+            android:layout_width="@dimen/_319sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@color/black"
+            app:flow_verticalAlign="bottom"
+            app:layout_constraintEnd_toEndOf="@+id/d11"
+            app:layout_constraintStart_toStartOf="@+id/d11"
+            app:layout_constraintTop_toBottomOf="@+id/d11" />
 
     </androidx.constraintlayout.widget.ConstraintLayout></ScrollView>

@@ -166,7 +166,7 @@ public class WithdrawFrag extends Fragment {
                     binding.COINBASEEMAIL.setError("Please Type Email ID");
                 }else if (TextUtils.isEmpty(EmailID)){
                     binding.COINBASEEMAIL.setError("Incorrect Email");
-                }else if (COINK >= 1000 && Token == 0 && INTADS>=20 && RWRDADS>=8 ) {
+                }else if (COINK >= 500 && Token == 0 && INTADS>=10 && RWRDADS>=2 ) {
 
 
                         withdrawModel = new WithdrawModel(UID,EmailID,MONEY,INTADS,RWRDADS);
