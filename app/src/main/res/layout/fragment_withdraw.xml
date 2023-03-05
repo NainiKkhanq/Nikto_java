@@ -62,7 +62,7 @@
 
                     android:gravity="center"
                     android:paddingLeft="@dimen/_10sdp"
-                    android:text="Total Coins:"
+                    android:text="Balance:"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_22sdp" />
 

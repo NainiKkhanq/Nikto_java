@@ -27,6 +27,7 @@ import com.applovin.mediation.nativeAds.MaxNativeAdLoader;
 import com.applovin.mediation.nativeAds.MaxNativeAdView;
 import com.applovin.sdk.AppLovinSdk;
 import com.applovin.sdk.AppLovinSdkConfiguration;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -307,13 +308,14 @@ public class SpinWheelFrag extends Fragment implements MaxAdListener, MaxRewarde
 
 
 
-                if( randomnumber == 2 || randomnumber == 4 ||  randomnumber == 8 || randomnumber == 10){
+                if( randomnumber == 2 || randomnumber == 4 ||  randomnumber == 8 || randomnumber == 10 || randomnumber == 0){
                     interstitialAd.loadAd();
 
                     if ( interstitialAd.isReady() )
                     {
                         interstitialAd.showAd();
                     }
+
 
 
 
@@ -577,146 +579,314 @@ public class SpinWheelFrag extends Fragment implements MaxAdListener, MaxRewarde
 
 
                 if (Coins >= 50 && Coins <=100){
-
-                    reference.child("BTC").setValue("0.00000001");
+                    reference.child("BTC").setValue("0.00000002");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000002");
                 }
                 else if (Coins >= 100 && Coins<=150){
-                    reference.child("BTC").setValue("0.00000002");
-
+                    reference.child("BTC").setValue("0.00000004");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000004");
                 }
-
-
                 else if (Coins >= 200 && Coins <= 250){
-                    reference.child("BTC").setValue("0.0000003");}
+                    reference.child("BTC").setValue("0.0000006");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000006");
+                }
 
                 else if (Coins >= 250 && Coins <= 300){
-                    reference.child("BTC").setValue("0.00000004");
+                    reference.child("BTC").setValue("0.00000008");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000008");
 
                 }else if (Coins >= 300 && Coins <= 350){
-                    reference.child("BTC").setValue("0.00000005");
+                    reference.child("BTC").setValue("0.00000009");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000009");
 
                 }else if (Coins >=350 && Coins <= 400){
-                    reference.child("BTC").setValue("0.00000006");
+                    reference.child("BTC").setValue("0.00000010");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000010");
 
                 }else if (Coins >= 400 && Coins <= 450){
-                    reference.child("BTC").setValue("0.00000007");
+                    reference.child("BTC").setValue("0.00000012");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000012");
 
                 }else if (Coins >= 450 && Coins <= 500 ){
-                    reference.child("BTC").setValue("0.00000008");
+                    reference.child("BTC").setValue("0.00000014");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000014");
 
                 }else if (Coins >= 500 && Coins <=550){
-                    reference.child("BTC").setValue("0.00000009");
+                    reference.child("BTC").setValue("0.00000015");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000015");
 
                 }else if (Coins >= 550 && Coins <= 600){
-                    reference.child("BTC").setValue("0.00000010");
+                    reference.child("BTC").setValue("0.00000017");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000017");
 
                 }else if (Coins >= 600 && Coins<= 700){
-                    reference.child("BTC").setValue("0.00000011");
+                    reference.child("BTC").setValue("0.00000019");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000019");
 
                 }else if (Coins >= 700 && Coins <= 800){
-                    reference.child("BTC").setValue("0.00000012");
+                    reference.child("BTC").setValue("0.00000021");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000021");
 
                 }else if (Coins >= 800 && Coins<=900){
-                    reference.child("BTC").setValue("0.00000013");
+                    reference.child("BTC").setValue("0.00000022");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000022");
+
 
                 }else if (Coins >= 900 && Coins <=1000){
-                    reference.child("BTC").setValue("0.00000013");
+                    reference.child("BTC").setValue("0.00000024");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000024");
+
 
                 }else if (Coins >= 1000 && Coins <=1050){
-                    reference.child("BTC").setValue("0.00000014");
+                    reference.child("BTC").setValue("0.00000025");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000025");
+
 
                 }else if (Coins >= 1050 && Coins <= 1100){
-                    reference.child("BTC").setValue("0.00000015");
+                    reference.child("BTC").setValue("0.00000026");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000026");
+
 
                 }else if (Coins >= 1100 && Coins <= 1150){
-                    reference.child("BTC").setValue("0.00000016");
+                    reference.child("BTC").setValue("0.00000027");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000027");
+
 
                 }else if (Coins >= 1150 && Coins <= 1200){
-                    reference.child("BTC").setValue("0.00000017");
+                    reference.child("BTC").setValue("0.00000028");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000028");
+
 
                 }else if (Coins >= 1200 && Coins <= 1300){
-                    reference.child("BTC").setValue("0.00000018");
+                    reference.child("BTC").setValue("0.00000029");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000029");
+
 
                 }else if (Coins >= 1300 && Coins <= 1400){
-                    reference.child("BTC").setValue("0.00000019");
+                    reference.child("BTC").setValue("0.00000030");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000030");
+
 
                 }else if (Coins >= 1400 && Coins <= 1600){
-                    reference.child("BTC").setValue("0.00000020");
+                    reference.child("BTC").setValue("0.00000032");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000032");
+
 
                 }else if (Coins >= 1600 && Coins <= 1700){
-                    reference.child("BTC").setValue("0.00000021");
+                    reference.child("BTC").setValue("0.00000033");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000033");
 
                 }else if (Coins >= 1700 && Coins <= 1750){
-                    reference.child("BTC").setValue("0.00000022");
+                    reference.child("BTC").setValue("0.00000034");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000034");
 
                 }else if (Coins >= 1750 && Coins <= 1800){
-                    reference.child("BTC").setValue("0.00000023");
+                    reference.child("BTC").setValue("0.00000035");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000035");
 
                 }else if (Coins >= 1800 && Coins <= 1900){
-                    reference.child("BTC").setValue("0.00000024");
+                    reference.child("BTC").setValue("0.00000036");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000036");
 
                 }else if (Coins >= 1900 && Coins <= 2000){
-                    reference.child("BTC").setValue("0.00000024");
+                    reference.child("BTC").setValue("0.00000037");
+                    Task<Void> rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin").child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue("0.00000037");
 
                 }else if (Coins >= 2000 && Coins <= 2100){
-                    reference.child("BTC").setValue("0.00000025");
+                    reference.child("BTC").setValue("0.00000038");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000038");
 
                 }else if (Coins >= 2100 && Coins <= 2200){
-                    reference.child("BTC").setValue("0.00000026");
+                    reference.child("BTC").setValue("0.00000039");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000039");
 
                 }else if (Coins >= 2200 && Coins <= 2300){
-                    reference.child("BTC").setValue("0.00000027");
+                    reference.child("BTC").setValue("0.00000040");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000040");
 
                 }else if (Coins >= 2300 && Coins <= 2350){
-                    reference.child("BTC").setValue("0.00000028");
+                    reference.child("BTC").setValue("0.00000041");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000041");
 
                 }else if (Coins >=2350  && Coins <= 2400){
-                    reference.child("BTC").setValue("0.00000029");
+                    reference.child("BTC").setValue("0.00000042");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000042");
 
                 }else if (Coins >=2450 && Coins<= 2500){
-                    reference.child("BTC").setValue("0.00000030");
-                }else if (Coins >=2550 && Coins<= 2600){
-                    reference.child("BTC").setValue("0.00000031");
-                }else if (Coins >=2600 && Coins<= 2650){
-                    reference.child("BTC").setValue("0.00000032");
-                }else if (Coins >=2650 && Coins<= 2700){
-                    reference.child("BTC").setValue("0.00000033");
-                }else if (Coins >=2700 && Coins<= 2800){
-                    reference.child("BTC").setValue("0.00000034");
-                }else if (Coins >=2800 && Coins<= 2900){
-                    reference.child("BTC").setValue("0.00000035");
-                }else if (Coins >=2900 && Coins<= 3000){
-                    reference.child("BTC").setValue("0.00000036");
-                }else if (Coins >=3000 && Coins<=3050 ){
-                    reference.child("BTC").setValue("0.00000037");
-                }else if (Coins >=3050 && Coins<= 3100){
-                    reference.child("BTC").setValue("0.00000038");
-                }else if (Coins >=3150 && Coins <=3200){
-                    reference.child("BTC").setValue("0.00000039");
-                }else if (Coins >= 3200 && Coins <=3250 ){
-                    reference.child("BTC").setValue("0.00000040");
-                }else if (Coins >= 3250 && Coins <= 3300){
-                    reference.child("BTC").setValue("0.00000041");
-                }else if (Coins >= 3300 && Coins <= 3350){
                     reference.child("BTC").setValue("0.00000043");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000043");
+                }else if (Coins >=2550 && Coins<= 2600){
+                    reference.child("BTC").setValue("0.00000044");
+                    Task<Void> rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin").child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue("0.00000044");
+                }else if (Coins >=2600 && Coins<= 2650){
+                    reference.child("BTC").setValue("0.00000045");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000045");
+                }else if (Coins >=2650 && Coins<= 2700){
+                    reference.child("BTC").setValue("0.00000046");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000046");
+                }else if (Coins >=2700 && Coins<= 2800){
+                    reference.child("BTC").setValue("0.00000047");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000047");
+                }else if (Coins >=2800 && Coins<= 2900){
+                    reference.child("BTC").setValue("0.00000048");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000048");
+                }else if (Coins >=2900 && Coins<= 3000){
+                    reference.child("BTC").setValue("0.00000049");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000049");
+                }else if (Coins >=3000 && Coins<=3050 ){
+                    reference.child("BTC").setValue("0.00000051");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000050");
+                }else if (Coins >=3050 && Coins<= 3100){
+                    reference.child("BTC").setValue("0.00000053");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000053");
+                }else if (Coins >=3150 && Coins <=3200){
+                    reference.child("BTC").setValue("0.00000055");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000055");
+                }else if (Coins >= 3200 && Coins <=3250 ){
+                    reference.child("BTC").setValue("0.00000056");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000056");
+                }else if (Coins >= 3250 && Coins <= 3300){
+                    reference.child("BTC").setValue("0.00000059");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000059");
+                }else if (Coins >= 3300 && Coins <= 3350){
+                    reference.child("BTC").setValue("0.00000061");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000061");
                 }else if (Coins >= 3350 && Coins <= 3400){
-                    reference.child("BTC").setValue("0.00000044");}
+                    reference.child("BTC").setValue("0.00000063");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000063");
+                }
                 else if (Coins >= 3400 && Coins <= 3500){
-                    reference.child("BTC").setValue("0.00000045");}
+                    reference.child("BTC").setValue("0.00000065");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000065");
+                }
                 else if (Coins >= 3500 && Coins <= 3600){
-                    reference.child("BTC").setValue("0.00000046");}
+                    reference.child("BTC").setValue("0.00000067");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000067");
+                }
                 else if (Coins >= 3600 && Coins <= 3700){
-                    reference.child("BTC").setValue("0.00000047");}
+                    reference.child("BTC").setValue("0.00000068");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000068");
+                }
                 else if (Coins >= 3700 && Coins <= 3800){
-                    reference.child("BTC").setValue("0.00000048");}
+                    reference.child("BTC").setValue("0.00000070");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000070");
+                }
                 else if (Coins >= 3800 && Coins <= 3900){
-                    reference.child("BTC").setValue("0.00000048");}
+                    reference.child("BTC").setValue("0.00000072");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000072");
+                }
                 else if (Coins >= 3900 && Coins <= 4000){
-                    reference.child("BTC").setValue("0.00000049");}
+                    reference.child("BTC").setValue("0.00000074");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000074");
+                }
 
                 else if (Coins > 4050 || Coins >= 5000) {
-                    reference.child("BTC").setValue("0.00000050+");
+                    reference.child("BTC").setValue("0.00000076+");
+                    DatabaseReference rfw = FirebaseDatabase.getInstance().getReference("WithdrawAdmin");
+                    rfw.child("UMONEY")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("U_MONEY").setValue("0.00000076+");
                 }
+
 
 
 

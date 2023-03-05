@@ -84,7 +84,7 @@
                 android:layout_marginLeft="@dimen/_4sdp"
                 android:layout_marginTop="@dimen/_14sdp"
                 android:background="@drawable/roundbtn"
-                android:backgroundTint="#FF5722"
+                android:backgroundTint="#FF2222"
                 android:drawableLeft="@drawable/wallet"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="WALLET"

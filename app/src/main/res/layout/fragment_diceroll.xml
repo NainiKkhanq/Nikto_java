@@ -26,8 +26,8 @@
 
             <ImageView
                 android:id="@+id/backbtn"
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_50sdp"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="@dimen/_2sdp"
                 android:layout_marginTop="@dimen/_5sdp"
@@ -176,9 +176,11 @@
             android:id="@+id/MAXNATIVE"
             android:layout_width="@dimen/_319sdp"
             android:layout_height="@dimen/_120sdp"
-            android:background="@color/black"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
             app:flow_verticalAlign="bottom"
             app:layout_constraintEnd_toEndOf="@+id/d11"
+            app:layout_constraintHorizontal_bias="0.247"
             app:layout_constraintStart_toStartOf="@+id/d11"
             app:layout_constraintTop_toBottomOf="@+id/d11" />
 

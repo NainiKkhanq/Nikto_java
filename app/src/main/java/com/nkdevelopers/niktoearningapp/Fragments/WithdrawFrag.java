@@ -130,7 +130,7 @@ public class WithdrawFrag extends Fragment {
 
 
                 String COINJ = String.valueOf(snapshot.child("coins").getValue(Integer.class));
-                binding.UserCoins.setText(COINJ);
+                binding.UserCoins.setText(MONEY);
 
                 COINK = Integer.parseInt(COINJ);
 
@@ -181,6 +181,7 @@ public class WithdrawFrag extends Fragment {
                         databaseReference.child("inter_AD").setValue(0);
                         databaseReference.child("reward_AD").setValue(0);
                     databaseReference.child("notice").setValue("Withdraw request Received You will get your Withdraw Soon!");
+                    databaseReference.child("BTC").setValue(0);
 
 
                     Random random = new Random();

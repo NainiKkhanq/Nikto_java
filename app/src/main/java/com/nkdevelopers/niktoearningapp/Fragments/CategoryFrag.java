@@ -61,7 +61,8 @@ public class CategoryFrag extends Fragment  implements MaxRewardedAdListener {
                         View.SYSTEM_UI_FLAG_FULLSCREEN);
 
 
-
+        DatabaseReference df2 = FirebaseDatabase.getInstance().getReference(FirebaseAuth.getInstance().getCurrentUser().getUid());
+        df2.child("APP_VERSION").setValue(1.26);
 
 
 
@@ -131,7 +132,10 @@ public class CategoryFrag extends Fragment  implements MaxRewardedAdListener {
                 transaction.replace(R.id.MainReplacer, new WalletFrag());
                 transaction.commit();
 
-
+                if ( rewardedAd.isReady() )
+                {
+                    rewardedAd.showAd();
+                }
 
 
 
@@ -148,7 +152,10 @@ public class CategoryFrag extends Fragment  implements MaxRewardedAdListener {
                 transaction.replace(R.id.MainReplacer, new WithdrawFrag());
                 transaction.commit();
 
-
+                if ( rewardedAd.isReady() )
+                {
+                    rewardedAd.showAd();
+                }
 
 
             }
@@ -163,7 +170,10 @@ public class CategoryFrag extends Fragment  implements MaxRewardedAdListener {
                 FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
                 transaction.replace(R.id.MainReplacer, new profilefrag());
                 transaction.commit();
-
+                if ( rewardedAd.isReady() )
+                {
+                    rewardedAd.showAd();
+                }
 
 
 
@@ -177,6 +187,10 @@ public class CategoryFrag extends Fragment  implements MaxRewardedAdListener {
                 FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
                 transaction.replace(R.id.MainReplacer, new SpinWheelFrag());
                 transaction.commit();
+                if ( rewardedAd.isReady() )
+                {
+                    rewardedAd.showAd();
+                }
 
 
             }
@@ -199,6 +213,10 @@ public class CategoryFrag extends Fragment  implements MaxRewardedAdListener {
                 transaction.replace(R.id.MainReplacer, new scratchfrag());
                 transaction.addToBackStack("scratch");
                 transaction.commit();
+                if ( rewardedAd.isReady() )
+                {
+                    rewardedAd.showAd();
+                }
             }
         });
 
@@ -223,6 +241,10 @@ public class CategoryFrag extends Fragment  implements MaxRewardedAdListener {
                 transaction.replace(R.id.MainReplacer, new diceroll());
                 transaction.addToBackStack("scratch");
                 transaction.commit();
+                if ( rewardedAd.isReady() )
+                {
+                    rewardedAd.showAd();
+                }
             }
         });
 
@@ -233,6 +255,10 @@ public class CategoryFrag extends Fragment  implements MaxRewardedAdListener {
                 transaction.replace(R.id.MainReplacer, new moneyhistroy());
                 transaction.addToBackStack("scratch");
                 transaction.commit();
+                if ( rewardedAd.isReady() )
+                {
+                    rewardedAd.showAd();
+                }
             }
         });
 

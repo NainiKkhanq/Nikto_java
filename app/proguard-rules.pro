@@ -19,3 +19,9 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+#-Firebase
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class com.google.firebase.auth.** {*;}
+-keepnames class com.google.firebase.auth.* {*;}
+-dontwarn com.google.firebase.auth.**
