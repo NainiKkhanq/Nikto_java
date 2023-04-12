@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="#3F51B5"
+    android:layout_height="match_parent"
+    tools:context=".waitingroom.Waitroom">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_16ssp"
+        android:text="Earning options are locked until you receive your Money. "
+        />
+
+    <ImageView
+        android:id="@+id/TMIMAGE"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/timers" />
+
+    <TextView
+        android:id="@+id/T2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_below="@id/TMIMAGE"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_16ssp"
+        android:text="In some cases payment takes 6 or more hours. Be Patience"
+        />
+
+    <Button
+        android:id="@+id/backs"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@id/T2"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_centerHorizontal="true"
+        android:text="I'Will Wait"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/clocks"
+        android:textSize="@dimen/_18sdp"
+        android:background="@drawable/googleauthdesign"
+        />
+</RelativeLayout></ScrollView>

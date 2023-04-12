@@ -6,7 +6,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:maxads="http://schemas.applovin.com/android/1.0"
     android:layout_gravity="center_horizontal"
     android:gravity="center_horizontal"
     android:background="#E8E8E8"
@@ -60,7 +59,7 @@
             android:drawablePadding="@dimen/_5sdp"
             android:fontFamily="sans-serif-condensed-medium"
             android:paddingLeft="@dimen/_4sdp"
-            android:text="41566"
+            android:text="000"
             android:textColor="@color/white"
             android:textSize="@dimen/_30sdp" />
 
@@ -224,13 +223,7 @@
             app:cornerRadius="@dimen/_6sdp" />
     </LinearLayout>
 
-    <com.applovin.mediation.ads.MaxAdView
-        android:id="@+id/maxAdView1"
-        maxads:adUnitId="45a079225c19874b"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_50sdp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/_10sdp" />
+
 
 
 </RelativeLayout>

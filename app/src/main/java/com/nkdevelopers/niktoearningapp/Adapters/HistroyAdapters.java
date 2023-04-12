@@ -1,7 +1,5 @@
 package com.nkdevelopers.niktoearningapp.Adapters;
 
-import static java.security.AccessController.getContext;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,48 +14,44 @@ import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-import com.nkdevelopers.niktoearningapp.ModelClasses.HistroyModels;
+import com.nkdevelopers.niktoearningapp.ModelClasses.HMD;
 import com.nkdevelopers.niktoearningapp.R;
-import com.squareup.picasso.Picasso;
 
-public class HistroyAdapters extends FirebaseRecyclerAdapter<HistroyModels,HistroyAdapters.ViewHolder> {
+public class HistroyAdapters extends FirebaseRecyclerAdapter<HMD,HistroyAdapters.ViewHolder> {
 
 
     String UPIC;
     Context context;
-    public HistroyAdapters(@NonNull FirebaseRecyclerOptions<HistroyModels> options) {
+    public HistroyAdapters(@NonNull FirebaseRecyclerOptions<HMD> options) {
         super(options);
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull HistroyModels model) {
+    protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull HMD model) {
 
 
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference(FirebaseAuth.getInstance().getCurrentUser().getUid());
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                UPIC = snapshot.child("upic").getValue(String.class);
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("MY_USERS").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
 
 
-        holder.WithBalance.setText(model.getTOTAL_MONEY());
-        holder.Dates.setText(model.getDATE());
-        Glide.with(holder.UPIC.getContext()).load(R.drawable.coins).circleCrop().into(holder.UPIC);
+
+        DatabaseReference databaseReferencePIC = FirebaseDatabase.getInstance().getReference("MY_USERS").child(FirebaseAuth.getInstance().getCurrentUser().getUid().toString());
+
+        try{
+            GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(holder.UPIC.getContext());
+            holder.WithBalance.setText(model.getTOTAL_MONEY());
+            holder.Dates.setText(model.getDATE());
+            Glide.with(holder.UPIC.getContext()).load(account.getPhotoUrl().toString()).circleCrop().into(holder.UPIC);
+        }catch (Exception e){
+
+        }
+
+
+
 
 
 

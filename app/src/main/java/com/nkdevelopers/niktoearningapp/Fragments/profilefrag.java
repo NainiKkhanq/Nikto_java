@@ -1,5 +1,6 @@
 package com.nkdevelopers.niktoearningapp.Fragments;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -30,6 +31,7 @@ public class profilefrag extends Fragment {
     String MG;
     String SPN;
 
+    @SuppressLint("SuspiciousIndentation")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -37,7 +39,7 @@ public class profilefrag extends Fragment {
         getActivity().getWindow().getDecorView().setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
                         View.SYSTEM_UI_FLAG_FULLSCREEN);
-        databaseReference = FirebaseDatabase.getInstance().getReference(FirebaseAuth.getInstance().getUid());
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("MY_USERS").child(FirebaseAuth.getInstance().getUid());
 
         SPN = "+92 3185856591";
         MG = "Thanks for using Bitcoin Bonanza! Please type your concern and we will reply you as soon as possible.!";
